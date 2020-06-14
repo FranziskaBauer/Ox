@@ -4,6 +4,8 @@
 
 body {
   margin: 0;
+  height: 100vh;
+  cursor: url('red-cursor-dot.svg'), auto;
 }
 
 a {
@@ -20,6 +22,8 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100px;
+  margin-top: 40px;
 }
 
 .home-logo-masthead {
@@ -37,37 +41,33 @@ li {
   text-transform: uppercase;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   margin-left: 20px;
   margin-right: 20px;
-  text-align: center;
 }
 
 .navbar a {
-  
-  text-align: center;
+  text-align: left;
   font-size: 16px;
   color: black;
-  text-align: center;
   text-decoration: none;
 }
 
 .dropdown {
-  
+  float: left;
   overflow: hidden;
 }
 
 .drop-down-item:not(:last-child) {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid darkgrey;
 }
 
 .drop-down-item {
   color: darkgray;
   margin-left: 10px;
   margin-right: 10px;
-  text-align: center;
 }
 
 .dropdown .dropbtn {
@@ -90,11 +90,9 @@ li {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 270px;
+  min-width: 200px;
   background-color: white;
-  width: 200px;
   z-index: 1;
-  text-align: center;
 }
 
 .dropdown-content a {
@@ -117,64 +115,12 @@ li {
 /*test-end*/
 
 
-
-
-.home-menu-item {
-  width: 200px;
-  justify-items: center;
-
-}
-
 .home-menu-item-bar {
   width: 2px;
-}
-
-.home-menu-item-about {
-  grid-column: 1 / 2;
-}
-
-.home-menu-item-bar1 {
-  grid-column: 2 / 3;
+  align-self: center;
   background-color: black;
   width: 1px;
   height: 30px;
-}
-
-.home-menu-item-info {
-  grid-column: 3 / 4;
-}
-
-.home-menu-item-bar2 {
-  grid-column: 4 / 5;
-  background-color: black;
-  width: 1px;
-  height: 30px;
-}
-
-.home-menu-item-categories {
-  grid-column: 5 / 6;
-}
-
-.home-menu-item-bar3 {
-  grid-column: 6 / 7;
-  background-color: black;
-  width: 1px;
-  height: 30px;
-}
-
-.home-menu-item-shop {
-  grid-column: 7 / 8;
-}
-
-.home-menu-item-bar4 {
-  grid-column: 8 / 9;
-  background-color: black;
-  width: 1px;
-  height: 30px;
-}
-
-.home-menu-item-search {
-  grid-column: 9 / 10;
 }
 
 /* ------------------- FOOTER ------------------ */
