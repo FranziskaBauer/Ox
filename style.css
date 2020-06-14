@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+text-decoration: none;
+}
+
+.logo-masthead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-logo-masthead {
+  height: 200px;
+}
+
+.home-menu {
+  margin: 0 20px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+}
+
+.home-menu-list {
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+
+.home-menu-list a {
+  color: black;
+  margin: 0;
+}
+
+.home-menu-item {
+  width: 200px;
+  justify-items: center;
+
+}
+
+.home-menu-item-bar {
+  width: 2px;
+}
+
+.home-menu-item-about {
+  grid-column: 1 / 2;
+}
+
+.home-menu-item-bar1 {
+  grid-column: 2 / 3;
+  background-color: black;
+  width: 1px;
+  height: 30px;
+}
+
+.home-menu-item-info {
+  grid-column: 3 / 4;
+}
+
+.home-menu-item-bar2 {
+  grid-column: 4 / 5;
+  background-color: black;
+  width: 1px;
+  height: 30px;
+}
+
+.home-menu-item-categories {
+  grid-column: 5 / 6;
+}
+
+.home-menu-item-bar3 {
+  grid-column: 6 / 7;
+  background-color: black;
+  width: 1px;
+  height: 30px;
+}
+
+.home-menu-item-shop {
+  grid-column: 7 / 8;
+}
+
+.home-menu-item-bar4 {
+  grid-column: 8 / 9;
+  background-color: black;
+  width: 1px;
+  height: 30px;
+}
+
+.home-menu-item-search {
+  grid-column: 9 / 10;
+}
+
+/* ------------------- FOOTER ------------------ */
+
+footer {
+  background-color: black;
+  color: white;
+  height: 330px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.footer-logo-img {
+  height: 50px;
+  margin-left: 50px;
+  margin-right: 70px;
+}
+
+.footer-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.span-footer {
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+}
+
+.footer-item {
+  margin-left: 50px;
+  margin-right: 50px;
+  line-height: 25px;
+}
+
+.footer-item a {
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer-icons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.footer-icon {
+  height: 40px;
+  margin: 15px;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: darkgray;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
