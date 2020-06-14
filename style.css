@@ -10,6 +10,11 @@ a {
 text-decoration: none;
 }
 
+li {
+  list-style: none;
+  text-align: center;
+}
+
 .logo-masthead {
   display: flex;
   flex-direction: column;
@@ -21,27 +26,98 @@ text-decoration: none;
   height: 200px;
 }
 
-.home-menu {
-  margin: 0 20px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+/*test*/
+
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  margin-top: 30px;
   font-family: 'Roboto Mono', monospace;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
 }
 
-.home-menu-list {
-  padding-left: 0;
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  justify-items: center;
-}
-
-.home-menu-list a {
+.navbar a {
+  
+  text-align: center;
+  font-size: 16px;
   color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.dropdown {
+  
+  overflow: hidden;
+}
+
+.drop-down-item:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+.drop-down-item {
+  color: darkgray;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  text-transform: uppercase;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
   margin: 0;
 }
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color: red;
+  font-weight: 900;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 270px;
+  background-color: white;
+  width: 200px;
+  z-index: 1;
+  text-align: center;
+}
+
+.dropdown-content a {
+  float: none;
+  color: darkgrey;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*test-end*/
+
+
+
 
 .home-menu-item {
   width: 200px;
