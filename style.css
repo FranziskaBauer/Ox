@@ -4,7 +4,6 @@
 
 body {
   margin: 0;
-  height: 100vh;
   cursor: url('red-cursor-dot.svg'), auto;
 }
 
@@ -44,8 +43,20 @@ li {
   justify-content: space-evenly;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  display: grid;
+  grid-template-columns: 1.3fr 0.95fr 1fr 1fr 2.94fr 1fr 1fr 0.95fr 1.3fr ;
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+
+.dropdown-about {
+  padding-left: 50px;
+}
+
+.dropdown-search {
+  padding-right: 40px;
 }
 
 .navbar a {
@@ -133,6 +144,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-top: 50px;
 }
 
 .footer-logo-container {
@@ -193,5 +205,85 @@ footer {
   margin-bottom: 50px;
   color: darkgray;
   font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+
+/*STATE HOME*/
+
+.home-3categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-top: 30px;
+}
+
+.main-projects-images {
+  position: relative;
+  width: 500px;
+  overflow: hidden;
+}
+
+.main-projects-juxtaposition {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 30vw;
+  height: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+.home-category-images-state-1 {
+  position: relative;
+  height: 600px;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+
+.home-category-images-state-2 {
+  height: 500px;
+}
+
+.home-category-images-body-1 {
+  height: 400px;
+}
+
+.home-category-images-body-2 {
+  height: 400px;
+}
+
+.home-category-images-soul-2 {
+  height: 400px;
+}
+
+.home-category {
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+  padding-right: 25px;
+  margin-left: 25px;
+  border-right: 1px solid black;
+}
+
+.home-category-overlay {
+  position: absolute;
+  top: 380px;
+  background-color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 4em;
+  letter-spacing: 2px;
+  color: red;
+}
+
+.home-categories-tagline {
+  color: red;
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.4em;
   text-align: center;
 }
