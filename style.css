@@ -123,9 +123,6 @@ li {
   display: block;
 }
 
-/*test-end*/
-
-
 .home-menu-item-bar {
   width: 2px;
   align-self: center;
@@ -178,7 +175,6 @@ footer {
 }
 
 .footer-item {
-  margin-left: 50px;
   margin-right: 50px;
   line-height: 25px;
 }
@@ -210,9 +206,16 @@ footer {
 
 /*STATE HOME*/
 
+.home-categories-container {
+  justify-self: center;
+  justify-content: center;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
 .home-3categories {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 0.1fr 1fr 0.1fr 1fr;
   grid-template-rows: 1fr;
   margin-top: 30px;
 }
@@ -233,21 +236,16 @@ footer {
   margin-left: auto;
   overflow: hidden;
 }
-/* 
-.home-category-images-state-1 {
-  position: relative;
-  height: 150%;
-  margin-top: -50px;
-  margin-left: -100px;
-}
 
-.home-category-images-body-1 {
-  height: 150%;
+.main-projects-juxtaposition-small {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 20vw;
+  height: 400px;
+  overflow: hidden;
+  justify-self: center;
 }
-
-.home-category-images-soul-2 {
-  height: 150%;
-} */
 
 .home-category-images-state-2 {
   height: 200%;
@@ -264,14 +262,17 @@ footer {
 
 .home-category-state, .home-category-body {
   box-sizing: content-box;
-  padding-right: 25px;
-  margin-left: 25px;
-  border-right: 1px solid black;
+  justify-self: center;
+}
+
+.home-category-small {
+  display: inline-block;
 }
 
 .home-category-soul {
-  border-right: 0;
+  justify-self: center;
 }
+
 
 .home-category-overlay {
   position: absolute;
@@ -311,9 +312,10 @@ footer {
   border-top: 1px solid black;
   height: 600px;
 }
+
 .card-text-main {
   margin-left: 80px;
-  width: 1200px;
+  max-width: 1200px;
 }
 
 .h2-card-ochiello {
@@ -350,4 +352,32 @@ footer {
   color: darkgray;
   font-family: 'Roboto Mono', monospace;
   text-align: right;
+}
+
+
+.article-card-container-small {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr;
+  grid-template-rows: 1fr;
+  margin-top: 30px;
+  justify-self: center;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.article-card-container-small a {
+}
+
+.vertical-line-small {
+  width: 1px;
+  height: 600px;
+  background-color: black;
+  justify-self: center;
+}
+
+.vertical-line-cat {
+  width: 1px;
+  height: 450px;
+  background-color: black;
+  justify-self: center;
 }
