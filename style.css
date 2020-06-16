@@ -233,30 +233,30 @@ footer {
   margin-left: auto;
   overflow: hidden;
 }
-
+/* 
 .home-category-images-state-1 {
   position: relative;
-  height: 600px;
+  height: 150%;
   margin-top: -50px;
   margin-left: -100px;
 }
 
-.home-category-images-state-2 {
-  height: 500px;
-}
-
 .home-category-images-body-1 {
-  height: 400px;
-}
-
-.home-category-images-body-2 {
-  height: 400px;
+  height: 150%;
 }
 
 .home-category-images-soul-2 {
-  height: 400px;
+  height: 150%;
+} */
+
+.home-category-images-state-2 {
+  height: 200%;
 }
 
+.home-category-images-body-2 {
+  height: 150%;
+}
+ */
 .home-category {
   display: flex;
   flex-direction: column;
@@ -267,6 +267,10 @@ footer {
   padding-right: 25px;
   margin-left: 25px;
   border-right: 1px solid black;
+}
+
+.home-category-soul {
+  border-right: 0;
 }
 
 .home-category-overlay {
@@ -282,11 +286,68 @@ footer {
   color: red;
 }
 
-.home-categories-tagline {
+.home-categories-tagline, .h2-card-ochiello {
   color: red;
   font-family: 'Roboto Mono', monospace;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1.4em;
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.article-card-container-main {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-bottom: 30px;
+}
+
+.article-card-main {
+  overflow: hidden;
+  padding-top: 30px;
+  border-top: 1px solid black;
+  height: 600px;
+}
+.card-text-main {
+  margin-left: 80px;
+  width: 1200px;
+}
+
+.h2-card-ochiello {
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.h1-card-main {
+  color: black;
+  font-family: 'Roboto Mono', monospace;
+  letter-spacing: 1px;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.card-summary {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card-summary-main {
+  font-size: 2em;
+  line-height: 1.3em;
+  margin: 0;
+}
+
+.home-img-main {
+  min-width: 100%;
+}
+
+.card-readmore {
+  color: darkgray;
+  font-family: 'Roboto Mono', monospace;
+  text-align: right;
 }
