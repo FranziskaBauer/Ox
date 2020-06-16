@@ -239,7 +239,7 @@ footer {
 
 .main-projects-juxtaposition-small {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   max-width: 20vw;
   height: 400px;
@@ -287,7 +287,7 @@ footer {
   color: red;
 }
 
-.home-categories-tagline, .h2-card-ochiello {
+.home-categories-tagline, .h2-card-ochiello, .h3-card-ochiello-small {
   color: red;
   font-family: 'Roboto Mono', monospace;
   text-transform: uppercase;
@@ -325,7 +325,15 @@ footer {
   font-weight: 300;
 }
 
-.h1-card-main {
+.h3-card-ochiello-small {
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+.h1-card-main, .h2-card-small {
   color: black;
   font-family: 'Roboto Mono', monospace;
   letter-spacing: 1px;
@@ -334,12 +342,22 @@ footer {
   margin-top: 0;
 }
 
+.h2-card-small {
+  font-size: 1.5em;
+}
+
 .card-summary {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .card-summary-main {
   font-size: 2em;
+  line-height: 1.3em;
+  margin: 0;
+}
+
+.card-summary-small {
+  font-size: 1em;
   line-height: 1.3em;
   margin: 0;
 }
@@ -370,7 +388,7 @@ footer {
 
 .vertical-line-small {
   width: 1px;
-  height: 600px;
+  height: 650px;
   background-color: black;
   justify-self: center;
 }
@@ -380,4 +398,9 @@ footer {
   height: 450px;
   background-color: black;
   justify-self: center;
+}
+
+.home-category-small a {
+  display: inline-flexbox;
+  flex-direction: column;
 }
