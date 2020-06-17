@@ -16,6 +16,13 @@ li {
   text-align: center;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .logo-masthead {
   display: flex;
   flex-direction: column;
@@ -136,7 +143,7 @@ li {
 footer {
   background-color: black;
   color: white;
-  height: 330px;
+  min-height: 330px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   display: flex;
   flex-direction: column;
@@ -175,7 +182,7 @@ footer {
 }
 
 .footer-item {
-  margin-right: 50px;
+  margin-right: 100px;
   line-height: 25px;
 }
 
@@ -412,15 +419,31 @@ footer {
 }
 
 
+/*---------------------ARTICLE PAGES----------------------------*/
+
+
 /* TOGGLE*/
 
-.toggle-btn
-{
-    position: relative;
+.toggle-btn {
+    position: fixed;
+    top: 350px;
     width: 145px;
     height: 74px;
-    margin: 0 auto;
     border-radius: 40px;
+    transform: rotate(90deg);
+    grid-column: 1/2;
+}
+
+.toggle-text {
+  transform: rotate(-90deg);
+  position: relative;
+  left: 100px;
+  top: -7px;
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  color: red;
 }
 
 input[type="checkbox"]
@@ -438,14 +461,9 @@ input[type="checkbox"]
     z-index: 2;
 }
 
-
-/*---------------------ARTICLE PAGES----------------------------*/
-
-/* TOGGLE START */
-
 #_2nd-toggle-btn
 {
-    margin: 60px auto 76px auto;
+    margin: 60px 10px 10px 10px;
 }
 
 #_2nd-toggle-btn span
@@ -455,8 +473,8 @@ input[type="checkbox"]
     right: 0px;
     bottom: 0px;
     left: 0px;
-    border: 8px solid #b3b3b3;
-    border-color: #b3b3b3;
+    border: 8px solid black;
+    border-color: black;
     overflow: hidden;
     background-color: #fff;
     border-radius: 40px;
@@ -472,7 +490,7 @@ input[type="checkbox"]
     height: 58px;
     border-width: 8px;
     border-style: solid;
-    border-color: #b3b3b3;
+    border-color: black;
     margin-left: 0px;
     border-radius: 50%;
     transform: translate(-8px,0px);
@@ -492,30 +510,64 @@ input[type="checkbox"]
 
 #_2nd-toggle-btn input[type="checkbox"]:checked + span
 {
-    border-color: #000;
+    border-color: #b3b3b3;
+
 }
 
 #_2nd-toggle-btn input[type="checkbox"]:checked + span:before
 {
-    border-color: #000;
+    border-color:#b3b3b3;
     transform: translate(63px,0px);
 }
 
 /*TOGGLE END*/
 
+.article-page-container {
+  display: flex;
+  flex-direction: row;
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 0.5fr 3fr;
+}
+
 .article-container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  grid-column: 2/3;
 }
+
+.article-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  font-family: 'Roboto Mono', monospace;
+
+}
+
+.article-navigation-home {
+  color: black;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+.article-navigation-cat {
+  margin-bottom: 20px;
+  font-size: 1.7em;
+  margin-right: 20px;
+}
+
 
 .article-monospace {
   font-family: 'Roboto Mono', monospace;
 }
 
 .article-h1 {
-  font-size: 3em;
+  font-size: 4em;
   margin-bottom: 70px;
+  margin-top: 0px;
 }
 
 .article-author {
@@ -529,7 +581,7 @@ input[type="checkbox"]
 .article-bio {
   font-size: 1em;
   line-height: 1.4em;
-  margin-right: 600px;
+  margin-right: 700px;
   margin-left: 100px;
   margin-bottom: 50px;
 }
@@ -540,11 +592,91 @@ input[type="checkbox"]
   line-height: 1.5em;
 }
 
+.article-paragraph-5 {
+letter-spacing: 0.1px;
+}
+
+.article-running-text p {
+  margin-bottom: 50px;
+}
+
 .article-img-float-right {
-  position: relative;
-  top: -200px;
   float: right;
   width: 500px;
-  margin-left: 100px;
-  margin-bottom: 170px;
+  margin-top: 10px;
+  margin-left: 130px;
+  margin-bottom: 300px;
 }
+
+.article-img-float-left {
+  float: left;
+  width: 500px;
+  margin-top: 10px;
+  margin-right: 130px;
+}
+
+.img-AnaMendieta-1 {
+  position: relative;
+  top: -250px;
+}
+
+.img-AnaMendieta-2 {
+  margin-bottom: 430px;
+}
+
+.img-AnaMendieta-3 {
+  margin-bottom: 0;
+}
+
+/*----image-overlay-article-START-----*/
+.article-img-container {
+  position: relative;
+}
+
+.article-img {
+  width: 500px;
+  height: auto;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 500px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+.article-img-container:hover .img-overlay {
+  opacity: 0.8;
+}
+
+.img-overlay-text {
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+  position: absolute;
+  top: 50%;
+  width: 400px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+
+.img-overlay-text-title {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.img-overlay-text-subtitle {
+  font-style: italic;
+}
+
+/*----image-overlay-article-END-----*/
