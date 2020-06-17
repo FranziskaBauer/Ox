@@ -191,8 +191,39 @@
 <script>
   function toggle () {
     setTimeout(() => {  location.replace("index.html"); }, 1000);
-
   }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/CSSRulePlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/EasePack.min.js"></script>
+
+<script>
+  gsap.to(".img-AnaMendieta-1", {
+      ease: "easeIn",
+      y: 500,
+      duration: 3,
+      scrollTrigger: {
+        trigger: ".img-AnaMendieta-1",
+        start: "top 5%",
+        end: "bottom 40%",
+        toggleActions: "play none play reverse",
+      }
+    });
+</script>
+
+<script>
+  gsap.to(".img-AnaMendieta-2", {
+      ease: "easeIn",
+      y: 400,
+      duration: 3,
+      scrollTrigger: {
+        trigger: ".img-AnaMendieta-2",
+        start: "top 5%",
+        end: "bottom 40%",
+        toggleActions: "play none play reverse",
+      }
+    });
 </script>
 
 </body>
