@@ -528,6 +528,7 @@ input[type="checkbox"]
   width: 1400px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 150px;
   display: grid;
   grid-template-columns: 0.5fr 3fr;
 }
