@@ -171,6 +171,10 @@ footer {
   align-self: center;
 }
 
+.footer-container-categories {
+  margin-top: 0;
+}
+
 .footer-info {
   display: flex;
   flex-direction: row;
@@ -710,10 +714,9 @@ a.active-link-menu {
   position: fixed;
   right: 0;
   left: 0;
-  margin-top: 50px;
+  margin-top: 70px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 10px;
   background-color: none;
 }
 
