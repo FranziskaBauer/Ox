@@ -355,6 +355,10 @@ footer {
   margin-bottom: 10px;
 }
 
+.h2-card-small-white {
+  color: white;
+}
+
 .card-summary {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -367,7 +371,7 @@ footer {
 
 .card-summary-small {
   font-size: 1em;
-  line-height: 1.3em;
+  line-height: 1.35em;
   margin: 0;
 }
 
@@ -425,6 +429,7 @@ footer {
 /* TOGGLE*/
 
 .toggle-btn {
+  justify-self: start;
     position: fixed;
     top: 350px;
     width: 145px;
@@ -681,3 +686,104 @@ letter-spacing: 0.1px;
 }
 
 /*----image-overlay-article-END-----*/
+
+
+/*-----------------ACTIVE LINK MENU----------------*/
+
+a.active-link-menu {
+  font-weight: 600;
+  color: red;
+}
+
+.category-page-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 50%);
+  z-index: -100;
+}
+
+.category-name {
+  position: fixed;
+  right: 0;
+  left: 0;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  background-color: none;
+}
+
+.category-name-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+  font-size: 7em;
+  color: red;
+  font-family: 'Roboto Mono', monospace;
+  text-align: left;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-transform: uppercase;
+}
+
+.category-page-article-container {
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.category-article-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 1400px;
+  margin-bottom: 50px;
+  z-index: 1000;
+}
+
+@media (min-width:2000px) {
+  .category-article-row {
+    padding-left: 40px;
+  }
+}
+.horizontal-line-categories {
+  position: relative;
+  top: 300px;
+  height: 1px;
+  width: 150%;
+  margin-left: -300px;
+  background-color: darkgrey;
+  z-index: -1100;
+}
+
+.text-container-small-category {
+  width: 500px;
+  margin-top: 20px;
+}
+
+.text-container-small-white {
+  color: white;
+}
+
+.category-article-small {
+  margin-top: 50px;
+  width: 600px;
+}
+
+.main-projects-juxtaposition-small-categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 30vw;
+  height: 400px;
+  overflow: hidden;
+  justify-self: center;
+}
