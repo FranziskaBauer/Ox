@@ -741,6 +741,7 @@ a.active-link-menu {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 60px;
 }
 
 .category-article-row {

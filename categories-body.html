@@ -125,7 +125,7 @@
             </div>
             <div class="text-container-small text-container-small-category">
               <h2 class="h2-card-small">Kusama and anti-war activism</h2>
-              <p class="card-summary card-summary-small">Yayoi Kusama has always had a strong political conscience, and has been vehemently opposed to war since her teens. Some of her earliest surviving paintings relate to the horrors of war: Accumulation of the Corpses (Prisoner Surrounded by the Curtain of Depersonalization) and Earth of Accumulation, both dating from 1950, show bleak, war-torn landscapes where even plant life struggles to survive.</p>
+              <p class="card-summary card-summary-small">Yayoi Kusama has always had a strong political conscience, and has been vehemently opposed to war since her teens. Some of her earliest surviving paintings relate to the horrors of war: Accumulation of the Corpses...</p>
               <a href="#"><p class="card-readmore card-readmore-small">Read more...</p></a>
             </div>
           </div>
@@ -219,18 +219,18 @@
   gsap.to(".category-name", {
       ease: Power1.easeOut,
       y: -50,
-      duration: 3,
+      duration: 5,
       scrollTrigger: {
         trigger: ".category-name",
-        start: "top 20%",
-        end: "bottom 80%",
+        start: "top 5%",
+        end: "bottom 55%",
         toggleActions: "play none play reverse",
-        /* markers: {startColor: "green", endColor: "red", fontSize: "22px"} */
+        markers: {startColor: "green", endColor: "red", fontSize: "22px"}
       }
     });
 
   $(window).scroll(function(){
-    $(".category-name").css("top", Math.max(0, 250 - $(this).scrollTop()));
+    $(".category-name").css("top", Math.max(-50, 220 - $(this).scrollTop()));
   });
 </script>
 </body>
