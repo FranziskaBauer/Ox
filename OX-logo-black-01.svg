@@ -1,1 +1,23 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 1024"><defs><style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}</style><clipPath id="clip-path"><rect class="cls-1" x="207.83" y="268.32" width="864" height="487.08"/></clipPath></defs><polygon points="870.18 354.59 948.37 478.32 1068.69 280.56 910.82 280.56 870.18 354.59"/><g class="cls-2"><path d="M532.21,513.58v-1.73c0-56.79-37.69-105-90.32-105-54.19,0-88.76,47.33-88.76,103.26v1.72c0,56.8,37.71,105,90.33,105,54.2,0,88.75-47.33,88.75-103.27m-324.38,0v-1.73c0-132.52,99-243.53,235.63-243.53,135.88,0,234.06,109.29,234.06,241.81v1.72c0,132.54-99,243.55-235.63,243.55C306,755.4,207.83,646.11,207.83,513.58"/></g><polygon points="624.14 279.07 764.73 509.71 621.78 744.64 778.87 744.64 845.63 625.02 911.61 744.64 1071.83 744.64 928.89 508.85 785.15 279.07 624.14 279.07"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 864 487.1" style="enable-background:new 0 0 864 487.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+</style>
+<polygon points="662.3,86.3 740.5,210 860.9,12.2 703,12.2 "/>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="0" width="864" height="487.1"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st0">
+		<path d="M324.4,245.3v-1.7c0-56.8-37.7-105-90.3-105c-54.2,0-88.8,47.3-88.8,103.3v1.7c0,56.8,37.7,105,90.3,105
+			C289.8,348.5,324.4,301.2,324.4,245.3 M0,245.2v-1.7C0,111,99,0,235.6,0c135.9,0,234.1,109.3,234.1,241.8v1.7
+			c0,132.5-99,243.6-235.6,243.6C98.2,487.1,0,377.8,0,245.2"/>
+	</g>
+</g>
+<polygon points="416.3,10.8 556.9,241.4 414,476.3 571,476.3 637.8,356.7 703.8,476.3 864,476.3 721.1,240.5 577.3,10.8 "/>
+</svg>

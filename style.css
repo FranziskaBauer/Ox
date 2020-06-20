@@ -28,7 +28,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100px;
+  height: 200px;
   margin-top: 40px;
 }
 
@@ -648,6 +648,13 @@ letter-spacing: 0.1px;
 .img-DannyLyon-2 {
   margin-bottom: 100px;
   margin-top: 50px;
+}
+
+.img-DannyLyon-3 {
+}
+
+.img-DannyLyon-3 {
+  float: none;
 }
 
 
