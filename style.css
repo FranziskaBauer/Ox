@@ -60,6 +60,7 @@ header {
 
 .dropdown-about {
   padding-left: 50px;
+  z-index: 400;;
 }
 
 .dropdown-search {
@@ -638,6 +639,18 @@ letter-spacing: 0.1px;
   margin-bottom: 0;
 }
 
+.img-DannyLyon-1 {
+  position: relative;
+  top: -330px;
+  margin-bottom: 100px;
+}
+
+.img-DannyLyon-2 {
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+
 /*----image-overlay-article-START-----*/
 .article-img-container {
   position: relative;
@@ -708,6 +721,7 @@ a.active-link-menu {
   background: rgb(0,0,0);
   background: linear-gradient(90deg, rgba(0,0,0,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 50%);
   z-index: -100;
+  position: relative;
 }
 
 .category-name {
