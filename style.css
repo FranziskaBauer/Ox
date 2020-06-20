@@ -28,12 +28,12 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 200px;
-  margin-top: 40px;
+  height: 130px;
+  margin-top: 30px;
 }
 
 .home-logo-masthead {
-  height: 200px;
+  
 }
 
 /*test*/
@@ -643,19 +643,18 @@ letter-spacing: 0.1px;
   position: relative;
   top: -330px;
   margin-bottom: 100px;
+  clear:left;
 }
 
 .img-DannyLyon-2 {
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   margin-top: 50px;
 }
 
-.img-DannyLyon-3 {
+.img-DannyLyon-3, .img-DannyLyon-4, .img-DannyLyon-5 {
+  width: 100%;
 }
 
-.img-DannyLyon-3 {
-  float: none;
-}
 
 
 /*----image-overlay-article-START-----*/
@@ -668,6 +667,11 @@ letter-spacing: 0.1px;
   height: auto;
 }
 
+.article-img-wide {
+  width: 1200px;
+  height: auto;
+}
+
 .img-overlay {
   position: absolute;
   top: 0;
@@ -675,7 +679,7 @@ letter-spacing: 0.1px;
   left: 0;
   right: 0;
   height: 100%;
-  width: 500px;
+  width: inherit;
   opacity: 0;
   transition: .5s ease;
   background-color: white;
