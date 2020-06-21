@@ -10,7 +10,7 @@
 <body>
   
   <header>
-    <a href="#"><div class="logo-masthead"><img class="home-logo home-logo-masthead" src="OX-logo-black-01.svg" alt="OX magazine logo"></div></a>
+    <a href="index.html"><div class="logo-masthead"><img class="home-logo home-logo-masthead" src="OX-logo-black-01.svg" alt="OX magazine logo"></div></a>
    
     <div class="navbar">
 
@@ -80,8 +80,8 @@
   <div  class="article-container">
 
     <div class="article-navigation">
-      <a href="#"><div class="h3-card-ochiello-small article-navigation-home">Home</div></a>
-      <a href="#"><div class="h3-card-ochiello-small article-navigation-cat">Soul</div></a>
+      <a href="index.html"><div class="h3-card-ochiello-small article-navigation-home">Home</div></a>
+      <a href="categories-body.html"><div class="h3-card-ochiello-small article-navigation-cat">Body</div></a>
     </div>
     <h1 id="article-top" class="article-h1 article-monospace">Ana Mendieta (1948–1985)</h1>
     <p class="article-date article-monospace">November 11, 2004</p>
@@ -195,7 +195,7 @@
 
 <script>
   function toggle () {
-    setTimeout(() => {  location.replace("index.html"); }, 1000);
+    setTimeout(() => {  location.replace("article-Kusozu.html"); }, 700);
   }
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
@@ -216,10 +216,8 @@
         toggleActions: "play none play reverse",
       }
     });
-</script>
-
-<script>
-  gsap.to(".img-AnaMendieta-2", {
+    
+    gsap.to(".img-AnaMendieta-2", {
       ease: Power1.easeOut,
       y: 400,
       duration: 3,

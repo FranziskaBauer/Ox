@@ -830,7 +830,7 @@ letter-spacing: 0.1px;
 }
 
 .img-LeniRiefenstahl-1 {
-  top: -330px;
+  top: -290px;
   margin-bottom: 2990px;
 }
 
@@ -842,6 +842,41 @@ letter-spacing: 0.1px;
 .img-LeniRiefenstahl-3 {
 margin-bottom: 2850px;
 }
+
+.img-Basquiat-1 {
+  top: -330px;
+  margin-bottom: 300px;
+  clear: left;
+}
+
+.img-Basquiat-2 {
+  margin-bottom: 1000px;
+}
+.img-Basquiat-3 {
+  margin-bottom: 1500px;
+}
+
+.img-HieronymusBosch-1 {
+  top: -190px;
+  margin-bottom: 1250px;
+  width: 500px;
+}
+
+.img-HieronymusBosch-2 {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.img-Kusozu-1 {
+  top: -330px;
+  margin-bottom: 700px;
+}
+
+.img-Kusozu-2, .img-Kusozu-3, .img-Kusozu-4, .img-Kusozu-5, .img-Kusozu-6, .img-Kusozu-7, .img-Kusozu-8, .img-Kusozu-9 {
+  width: 100%;  
+  margin-bottom: 20px;
+}
+
 
 /*----image-overlay-article-START-----*/
 .article-img-container {
