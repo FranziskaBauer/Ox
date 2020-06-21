@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <title>OX – Leni Riefenstahl</title>
   <link rel="icon" type="image/svg" href="OX-logo-black-01.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body class="body-black-bg">
@@ -50,11 +51,23 @@
 
       <div class="home-menu-item-bar home-menu-item-bar1 home-menu-item-bar-black"></div>
 
+      <!-- search field -->
+      <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+        <div class="overlay-content">
+          <form action="index.html">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit"><span class="search-button-go">GO!</span></button>
+          </form>
+        </div>
+      </div>
+
       <div class="dropdown dropdown-search">
-        <div class="dropbtn"><a href="#">Search</a></div>
+        <div class="dropbtn"><a href="#"><button class="openBtn" onclick="openSearch()">Search</button></a></div>
         <div class="dropdown-content">
         </div>
       </div>
+      <!-- search field end -->
 
     </div>
 
@@ -269,6 +282,15 @@
   });
 </script>
 
+<script>
+  function openSearch() {
+    document.getElementById("myOverlay").style.display = "block";
+  }
+  
+  function closeSearch() {
+    document.getElementById("myOverlay").style.display = "none";
+  }
+</script>
 
 </body>
 </html>

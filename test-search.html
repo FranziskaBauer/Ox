@@ -8,6 +8,108 @@
   <link rel="icon" type="image/svg" href="OX-logo-black-01.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .openBtn {
+      border: none;
+      background-color: white;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 1em;
+      text-transform: uppercase;
+    }
+    
+    .openBtn:hover {
+      color: red;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .overlay {
+      height: 100%;
+      width: 100%;
+      display: none;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0, 0.9);
+    }
+    
+    .overlay-content {
+      position: relative;
+      top: 46%;
+      width: 80%;
+      text-align: center;
+      margin-top: 30px;
+      margin: auto;
+    }
+    
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 40px;
+      cursor: pointer;
+      color: white;
+      cursor: pointer;
+      font-family: 'Roboto Mono', monospace;
+    }
+    
+    .overlay .closebtn:hover {
+      color: red;
+    }
+    
+    .overlay input[type=text] {
+      padding: 15px;
+      font-size: 17px;
+      border: none;
+      float: left;
+      width: 90%;
+      background: white;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 1.1em;
+    }
+    
+    .overlay input[type=text]:hover {
+      background: white;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .overlay button {
+      float: left;
+      width: 10%;
+      height: inherit;
+      padding: 15px;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .search-button-go {
+      font-family: 'Roboto Mono', monospace;
+    }
+    
+    .overlay button:hover {
+    }
+
+
+    .closebtn, input[type="submit"], input[type="reset"] {
+    	background: none;
+    	color: inherit;
+    	border: none;
+    	padding: 0;
+    	font: inherit;
+    	cursor: pointer;
+    	outline: inherit;
+    }
+
+    </style>
 </head>
 <body>
   
@@ -254,7 +356,23 @@
           <a href="article-Kusozu.html"><p class="card-readmore card-readmore-small">Read more...</p></a>
         </div>
       </div>
+      
+     <!--  <div class="vertical-line-small"></div>
 
+      <div class="home-category-small">
+        <div class="main-projects-juxtaposition-small">
+          <div>
+            <a href="#"><img src="images/2-Frida-Kahlo/2-Frida-Kahlo-img-1.jpg" alt="Frida Kahlo"></a>
+          </div>
+        </div>
+        <div class="text-container-small">
+          <a href="#"><h3 class="h3-card-ochiello-small">Soul</h3></a>
+          <h2 class="h2-card-small">Marxist, Nationalist, Feminist: The Art and Politics of Frida Kahlo</h2>
+          <p class="card-summary card-summary-small">He is a postgraduate student with an academic background in language, literature, and political science. During his studies, he gained several years of experience working in the field of foreign language education...</p>
+          <a href="#"><p class="card-readmore card-readmore-small">Read more...</p></a>
+        </div>
+      </div>
+ -->
     </section>
 
 
@@ -328,15 +446,14 @@
   </footer>
 
 
-  <script>
-    function openSearch() {
-      document.getElementById("myOverlay").style.display = "block";
-    }
-    
-    function closeSearch() {
-      document.getElementById("myOverlay").style.display = "none";
-    }
-  </script>
+<script>
+function openSearch() {
+  document.getElementById("myOverlay").style.display = "block";
+}
 
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 </body>
 </html>
