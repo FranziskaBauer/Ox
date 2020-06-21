@@ -1102,6 +1102,108 @@ a.active-link-menu {
   justify-content: center;
   max-width: 30vw;
   height: 400px;
-  overflow: hidden;
   justify-self: center;
+}
+
+
+/* ABOUT PAGE */
+
+.about-body {
+  overflow-x: hidden;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: white;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-container-content {
+  margin-top: 60px;
+  background-color: black;
+  height: 500px;
+}
+
+.about-paragraph {
+  margin-top: 40px;
+}
+
+.about-logo {
+  height: 60px;
+  margin-left: 25%;
+  margin-top: 65px;
+}
+
+.item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+  display: block;
+  color: white;
+	top: 370px;
+  width: 60%;
+  font-size: 2em;
+	animation-duration: 20s;
+	animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+
+.about-container-info-running {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  font-size: 1.5em;
+  font-weight: 100;
+  line-height: 1.5em;
+  z-index: 100;
+}
+
+.about-paragraph-uppercase {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 900;
+  color: red;
+}
+
+
+.about-container-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25%;
+  margin-right: 25%;
+  position: relative;
+  margin-top: 50px;
 }
