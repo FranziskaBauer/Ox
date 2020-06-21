@@ -40,12 +40,12 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 130px;
+  height: 90px;
   margin-top: 30px;
 }
 
 .home-logo-masthead {
-  
+  height: 100px;
 }
 
 /*test*/
@@ -64,6 +64,7 @@ header {
   border-bottom: 1px solid black;
   margin-left: 25px;
   margin-right: 25px;
+  margin-top: 20px;
   display: grid;
   grid-template-columns: 1.3fr 0.95fr 1fr 1fr 2.94fr 1fr 1fr 0.95fr 1.3fr ;
   grid-template-rows: 1fr;
@@ -83,6 +84,7 @@ header {
   border-bottom: 1px solid white;
   margin-left: 25px;
   margin-right: 25px;
+  margin-top: 20px;
   display: grid;
   grid-template-columns: 1.3fr 0.95fr 1fr 1fr 2.94fr 1fr 1fr 0.95fr 1.3fr ;
   grid-template-rows: 1fr;
@@ -140,6 +142,11 @@ header {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
+  color: red;
+  font-weight: 900;
+}
+
+.navbar-black a:hover, .dropdown:hover .dropbtn {
   color: red;
   font-weight: 900;
 }
@@ -305,6 +312,18 @@ footer {
   justify-self: center;
 }
 
+.main-projects-juxtaposition-small-3 {
+  max-width: 28vw;
+}
+
+.home-horizontal-line {
+  height: 1px;
+  background-color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
 .home-category-images-state-2 {
   height: 200%;
 }
@@ -454,9 +473,15 @@ footer {
 .article-card-container-small a {
 }
 
+.article-card-container-small-3 {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr 0.5fr 1fr;
+  grid-template-rows: 1fr;
+}
+
 .vertical-line-small {
   width: 1px;
-  height: 650px;
+  height: inherit;
   background-color: black;
   justify-self: center;
 }
