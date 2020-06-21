@@ -149,7 +149,7 @@ header {
   position: absolute;
   min-width: 200px;
   background-color: white;
-  z-index: 1;
+  z-index: 4000;
 }
 
 .dropdown-content a {
@@ -966,7 +966,7 @@ a.active-link-menu {
   margin-top: 20px;
   background: rgb(0,0,0);
   background: linear-gradient(90deg, rgba(0,0,0,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 50%);
-  z-index: -100;
+  z-index: 3000;
   position: relative;
 }
 
@@ -978,6 +978,7 @@ a.active-link-menu {
   margin-right: auto;
   margin-left: auto;
   background-color: none;
+  z-index: -1000;
 }
 
 .category-name-text {
@@ -1002,6 +1003,7 @@ a.active-link-menu {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
+  z-index: 2500;
 }
 
 .category-article-row {
