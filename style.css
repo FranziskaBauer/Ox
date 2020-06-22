@@ -585,9 +585,23 @@ footer {
   justify-self: center;
   margin-left: 25px;
   margin-right: 25px;
+  background-color: white;
 }
 
 .article-card-container-small a {
+}
+
+.more-reads-container {
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  z-index: 10;
+}
+
+.more-reads {
+  margin-left: 25px;
+  text-transform: uppercase;
+  font-size: 2em;
 }
 
 .article-card-container-small-3 {
