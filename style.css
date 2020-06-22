@@ -455,7 +455,7 @@ footer {
 
 
 .home-category-state, .home-category-body {
-  box-sizing: content-box;
+  box-sizing: border-box;
   justify-self: center;
 }
 
@@ -605,7 +605,7 @@ footer {
 
 .vertical-line-cat {
   width: 1px;
-  height: 450px;
+  height: inherit;
   background-color: black;
   justify-self: center;
 }
