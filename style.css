@@ -488,7 +488,7 @@ footer {
   letter-spacing: 1px;
   font-size: 1.4em;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .article-card-container-main {
@@ -605,7 +605,7 @@ footer {
 
 .vertical-line-cat {
   width: 1px;
-  height: inherit;
+  height: 450px;
   background-color: black;
   justify-self: center;
 }
