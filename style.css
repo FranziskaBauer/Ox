@@ -1177,6 +1177,7 @@ a.active-link-menu {
   }
 }
 .horizontal-line-categories {
+  visibility: hidden;
   position: relative;
   top: 300px;
   height: 1px;
