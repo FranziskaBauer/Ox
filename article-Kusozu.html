@@ -334,11 +334,27 @@
       }
     });
 
-    $(window).scroll(function(){
-    $(".toggle-btn-white").css("top", Math.max(50, 300 - $(this).scrollTop()));
+/*     $(window).scroll(function(){
+    $(".toggle-btn").css("top", Math.max(50, 300 - $(this).scrollTop())); */
   });
 </script>
 
+<script>
+  var height = $(".more-reads-container").height();
+  
+  $(window).scroll(function(){
+          $(".toggle-btn-white").css("top",Math.max(100,340-$(this).scrollTop()));
+                          
+         if( ($(".toggle-btn-white").offset().top+height) >= $('.more-reads-container').offset().top){
+            $(".toggle-btn-white").fadeOut('fast');       
+         } 
+         
+         if( ($(this).scrollTop()+height) < ($('.more-reads-container').offset().top) ){
+            $(".toggle-btn-white").show();       
+         }
+
+      });
+  </script>  
 <script>
   function openSearch() {
     document.getElementById("myOverlay").style.display = "block";
